@@ -1,26 +1,20 @@
-header{
-    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
-
-.holder {
-    /* Clip edges, as some of the lines don't terminate nicely. */
-    overflow: hidden;
-    position: relative;
-    width: var(--width);
-    height: 50px;
-  }
-  
-  .ellipse {
+svg {
+    display: inline-block;
     position: absolute;
-    background: radial-gradient(ellipse, transparent, transparent 7px, black 7px, black 10px, transparent 11px);
-    background-size: 36px 40px;
-    width: var(--width);
-    height: 20px;
+    top: 0;
+    left: 0;
+  }
+  .container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%;
+    vertical-align: middle;
+    overflow: hidden;
   }
   
-  .ellipse2 {
-    top: 20px;
-    left: 18px;
-    background-position: 0px -20px;
-  }
